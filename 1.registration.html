@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>registration form</title>
+<head>
+<style>
+body{background-image:url("gdmlock.jpg");
+	line-height:35px;
+	font-style:italic;font-family:sans-serif;
+	font-size:20px;color:white;text-align:center;}
+label{padding-left:40px;}
+table{text-align:left;padding-left:30px;}
+input{border-color:blue;border-radius:10%;}
+input:hover{border-color:black;}
+h1{text-shadow:2px 2px 3px yellow;}
+</style>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form action="insert.php" method="POST" >
+<center><table>
+</tr><tr><th><label for="un" > Full Name:</label></th>
+<th><input type="text" name="username" required/></th>
+</tr><tr><th><label for="eml">Email:</label></th>
+<th><input type="text" name="email"  required/></th>
+</tr><tr><th><label for="phe">Phone number:</label></th>
+<th><input type="text" name="phonenumber" maxlength="10" minlength="10" required/></th>
+</tr>
+<tr><th><label for="DoB">Date of Birth:</th><th><input type="date" name="dob" required/></th></tr>
+<tr><th><label id="gender">Sex:</label></th>
+<th><input type="radio"  name="sex" value="m" /><span>Male</span>&nbsp
+<input type="radio" name="sex" value="f" /><span>Female</span></th></tr>
+<tr><th><label for="userid">User id:</label></th>
+<th><input type="text" name="userid" size="12" required/></th>
+</tr>
+<tr><th><label for="question1">Clue Question 1:</label></th>
+<th><textarea name="question1" rows="3" cols="50" placeholder="Enter ur question"/></textarea></th></tr>
+<tr><th><label for="answer1">Answer 1:</label></th>
+<th><input type="text" name="answer1" maxlength="4" minlength="4" required/></th></tr>
+<tr><th><label for="question1">Clue Question 2:</label></th>
+<th><textarea name="question2" rows="3" cols="50" placeholder="Enter ur question"/></textarea></th></tr>
+<tr><th><label for="answer2">Answer 2:</label></th>
+<th><input type="text" name="answer2" maxlength="4" minlength="4" required/></th></tr>
+<tr><th><label for="question3">Clue Question 3:</label></th>
+<th><textarea name="question3" rows="3" cols="50" placeholder="Enter ur question"/></textarea></th></tr>
+<tr><th><label for="answer3">Answer 3:</label></th>
+<th><input type="text" name="answer3" maxlength="4" minlength="4" required/></th></tr>
+<tr><th><input type="submit" name="submit" value="Submit" /></th>
+<th><input type="reset" name="reset" value="Reset" /></th>
+</tr></table></center></form>
+</body>
+</html>
